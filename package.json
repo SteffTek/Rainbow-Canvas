@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node ./src/app.js",
     "lint": "eslint ./src",
-    "test": "nodemon ./src/app.js"
+    "test": "nodemon ./src/app.js",
+    "build": "docker build -t stefftek/rainbow-web ."
   },
   "author": "SteffTek",
   "license": "Apache-2.0",
