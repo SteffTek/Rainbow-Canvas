@@ -268,4 +268,15 @@ class Room {
 
         eventManager.send(new Pixel({session: sessionID, pixel: pixel}))
     }
+
+    banUser(userID, reason = "No reason specified!") {
+        let payload = {
+            session: sessionID,
+            userID: userID,
+            reason: reason,
+            result: ""
+        }
+
+        eventManager.send(new Ban(payload));
+    }
 }

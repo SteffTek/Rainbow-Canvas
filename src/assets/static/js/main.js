@@ -9,7 +9,8 @@ const events = {
     Timer: Timer,
     Pixel: Pixel,
     Join: Join,
-    Ping: Ping
+    Ping: Ping,
+    Ban: Ban
 }
 
 /*
