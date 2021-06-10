@@ -1,7 +1,16 @@
 # Rainbow-Canvas (Web Frontend)
 An r/Place clone.
 
-## Dependencies
+### Other parts of this project:
+[**Rainbow TimeLapse**](https://github.com/SteffTek/Rainbow-Timelapse) - Generate a time lapse from rainbow data.
+
+[**Rainbow Heatmap**](https://github.com/SteffTek/Rainbow-Heatmap) - Generate a heat map from rainbow data.
+
+Rainbow Top Score (TBU)
+
+Rainbow Server (TBU)
+
+### Dependencies
 | Software | Version |
 |:--------:|:-------:|
 |  NodeJS  | > 14.15 |
