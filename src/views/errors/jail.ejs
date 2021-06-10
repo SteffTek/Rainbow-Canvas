@@ -1,0 +1,33 @@
+<%- include("../layout/header"); -%>
+        <main>
+            <style>
+                body {
+                    background-image:    url("/images/jail.png");
+                    background-repeat:   no-repeat;
+                    background-position: center top;
+                    background-color: #111111;
+                }
+
+                main {
+                    position: absolute;
+                    bottom: 10px;
+
+                    width: 100%;
+                    height: 100;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                audio {
+                    border-radius: 0;
+                    background-color: none;;
+                }
+            </style>
+            <audio id="playAudio" autoplay controls>
+                <source src="/audio/jail.mp3" type="audio/mpeg">
+            </audio>
+        </main>
+    </body>
+</html>

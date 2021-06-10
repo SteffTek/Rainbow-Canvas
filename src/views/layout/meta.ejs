@@ -1,0 +1,58 @@
+<%  
+    let config = conf.getConfig();
+    let name = config.meta.name;
+    let info = config.meta.info;
+    let color = config.meta.color;
+    let domain = config.meta.domain;
+    let protocol = config.meta.protocol;
+    let year = (new Date()).getFullYear();
+%>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="renderer" content="webkit">
+        <meta name="robots" content="index,follow">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <meta name="apple-mobile-web-app-title" content="<%= name %> | <%= routeTitle %>">
+        <meta name="google" value="notranslate">
+
+        <meta content="authenticity_token" name="csrf-param">
+        <meta content="<%= csrfToken %>" name="csrf-token">
+
+        <title><%= name %> | <%= routeTitle %></title>
+        <meta name="title" content="<%= name %> | <%= routeTitle %>">
+        <meta name="description" content="<%= info %>">
+        <meta name="application-name" content="<%= name %> | <%= routeTitle %> CMS">
+        <meta name="author" content="<%= name %> | <%= routeTitle %>">
+
+        <link rel="icon" href="/images/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+        <meta name="msapplication-TileColor" content="<%= color %>">
+        <meta name="msapplication-TileImage" content="/images/favicon.png">
+        <meta name="theme-color" content="<%= color %>">
+
+        <meta property="og:title" content="<%= name %> | <%= routeTitle %>">
+        <meta property="og:description" content="<%= info %>">
+        <meta property="og:site_name" content="<%= name %> | <%= routeTitle %>">
+        <meta property="og:image" content="https://<%= domain %>/images/favicon.png" />
+        <meta property="og:url" content="https://<%= domain %>/">
+        <meta property="og:type" content="website" />
+        <meta name="theme-color" content="<%= color %>">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="<%= domain %>">
+        <meta property="twitter:url" content="https://<%= domain %>/">
+        <meta name="twitter:title" content="<%= name %> | <%= routeTitle %>">
+        <meta name="twitter:description" content="<%= info %>">
+        <meta name="twitter:image" content="https://<%= domain %>/images/favicon.png">
+
+
+        <link rel="canonical" href="<%= protocol %>://<%= domain %><%= route %>" />
+
+        <meta name="google-site-verification" content="_cNvCYS2hjIvmPRwPKe67oVZv_litk_ZZgPBxyguLZ8" />
+
+        <!-- // ===================================== // -->
+        <!-- // = Copyright (c) <%= year %> Virtual Playground = // -->
+        <!-- // ===================================== // -->

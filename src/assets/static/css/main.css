@@ -1,0 +1,528 @@
+/*
+    CONTAINER
+*/
+.container {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    z-index: 99;
+    pointer-events: none;;
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+
+    margin-top: -1px;
+    background: var(--color-gradient);
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    margin: 5px;
+    padding: 5px;
+
+    width: auto;
+    height: auto;
+    max-width: 80px;
+
+    background-color: var(--background);
+
+    border-radius: 4px;
+    pointer-events: all;
+
+    text-align: center;
+    color: var(--green);
+    font-weight: bold;
+}
+
+#pos {
+    margin: 5px;
+    padding: 5px;
+
+    width: auto;
+    height: auto;
+    max-width: 80px;
+
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+
+    border-radius: 4px;
+    pointer-events: all;
+}
+
+#colors {
+    margin: 5px;
+    padding: 5px;
+
+    width: auto;
+    height: auto;
+    max-width: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+
+    border-radius: 4px;
+    pointer-events: all;
+}
+
+.color {
+    margin: 5px;
+    padding: 5px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: var(--darker-background);
+    color: var(--text-color);
+    text-align: center;
+
+    transition-duration: 0.2s;
+    border-radius: 4px;
+}
+
+.color:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+
+
+    filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+}
+
+#raster {
+    margin: 5px;
+    padding: 5px;
+
+    width: auto;
+    height: auto;
+    max-width: 80px;
+
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 25px;
+
+    border-radius: 4px;
+    pointer-events: all;
+}
+
+#raster.active {
+    color: var(--green);
+}
+
+
+#raster:hover {
+    cursor: pointer;
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+}
+
+#mobile {
+    margin: 5px;
+    padding: 5px;
+
+    width: auto;
+    height: auto;
+    max-width: 80px;
+
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 25px;
+
+    border-radius: 4px;
+    pointer-events: all;
+}
+
+#mobile.active {
+    color: var(--green);
+}
+
+#mobile:hover {
+    cursor: pointer;
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+}
+
+@media only screen and (min-width: 500px) {
+    #mobile {
+        display: none;
+    }
+}
+
+.error {
+    margin: 5px;
+    padding: 5px;
+
+    width: 70%;
+    height: auto;
+
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+
+    border-radius: 4px;
+    pointer-events: all;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 5px;
+    padding: 5px;
+
+    min-width: 150px;
+    min-height: 50px;
+
+    background-color: var(--discord);
+    color: var(--background);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    transition-duration: 0.2s;
+    pointer-events: all;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+}
+
+/*
+    LOGIN
+*/
+#login {
+    position: absolute;
+    bottom: 0px;
+
+    z-index: 99;
+
+    margin: 15px;
+    padding: 15px;
+
+    width: auto;
+    height: auto;
+
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+
+    border-radius: 4px;
+    pointer-events: all;
+}
+
+#login a {
+    margin: 5px;
+    padding: 5px;
+
+    background-color: var(--discord);
+    color: var(--background);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    transition-duration: 0.2s;
+    pointer-events: all;
+}
+
+#login a:hover {
+    cursor: pointer;
+    filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+}
+
+/*
+    SOCIAL
+*/
+#social {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    z-index: 99;
+
+    margin: 15px;
+    padding: 15px 5px 15px 5px;
+
+    width: auto;
+    height: auto;
+
+    background-color: var(--background);
+    color: var(--text-color);
+    text-align: center;
+
+    border-radius: 4px;
+    pointer-events: all;
+}
+
+#social a {
+    margin: 2px;
+    padding: 10px;
+
+    background-color: var(--text-color);
+    color: var(--background);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+
+    border-radius: 4px;
+
+    transition-duration: 0.2s;
+    pointer-events: all;
+}
+
+#social a:hover {
+    cursor: pointer;
+    filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+}
+
+@media only screen and (max-width: 600px) {
+    #social {
+        display: none;
+    }
+}
+
+/*
+    TIMER
+*/
+#timer {
+    position: absolute;
+    top: 0px;
+
+    width: 100%;
+    height: auto;
+
+    z-index: 99;
+
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    opacity: 90%;
+
+    -webkit-text-stroke: 2px var(--background);
+
+    background-image: linear-gradient(90deg, rgba(252,70,107,1) 0%, rgba(156,82,180,1) 50%, rgba(63,94,251,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+    CANVAS
+*/
+#canvas {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/*
+    FOOTER
+*/
+.footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    width: 100%;
+    height: auto;
+
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer {
+        display: none;
+    }
+}
+
+/*
+    TOOLTIP
+*/
+/* Add this to your CSS */
+.tooltip-ui {
+    --balloon-color: var(--background);
+    --balloon-font-size: 20px;
+    --balloon-text-color: var(--text-color);
+    --balloon-border-radius: 4px;
+}
+
+/*
+    INFO BOX
+*/
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 6000;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background-transparent);
+}
+
+#overlay .box {
+    width: 50%;
+    max-width: 700px;
+    height: auto;
+
+    margin: 5px;
+    padding: 5px;
+
+    background-color: var(--background);
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    #overlay .box {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+}
+
+#overlay .box .text {
+    width: 100%;
+    height: auto;
+
+    margin: 5px;
+    padding: 5px;
+
+    text-align: justify;
+    line-height: 20px;
+}
+
+#overlay .box .text h1 {
+    text-align: center;
+}
+
+#overlay .box .button {
+    margin: 5px;
+    padding: 5px;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--discord);
+    color: var(--background);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    transition-duration: 0.2s;
+    pointer-events: all;
+}
+
+#overlay .box .button:hover {
+    cursor: pointer;
+    filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+}

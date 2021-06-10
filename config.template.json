@@ -1,0 +1,25 @@
+{
+    "server": {
+        "port": 80
+    },
+    "meta": {
+        "name": "Rainbow Canvas",
+        "info": "Take part on a big canvas - pixel by pixel!",
+        "color": "#383961",
+        "domain": "example.com",
+        "protocol": "http"
+    },
+    "session": {
+        "secret": "",
+        "key": "",
+        "maxage": 60000
+    },
+    "database": {
+        "url":""
+    },
+    "discord_oauth":{
+        "clientId": "",
+        "clientSecret": "",
+        "redirectUri": ""
+    }
+}

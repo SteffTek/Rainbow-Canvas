@@ -1,0 +1,12 @@
+        <div class="footer">
+            <div>
+                <%
+                    let year = (new Date()).getFullYear();
+                %>
+                <p style="text-align: center; font-size: 12px; padding: 5px; border-radius: 4px;">Left Mouse Button = Place Pixel | Middle Mouse = Move | Wheel = Zoom</p>
+                <p style="text-align: center; font-weight: bold;">Copyright &copy; <%= year %> SteffTek.de</p>
+            </div>
+        </div>
+        <%- include("explorer") %>
+    </body>
+</html>

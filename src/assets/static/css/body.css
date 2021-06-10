@@ -1,0 +1,27 @@
+/*
+    BODY
+*/
+body {
+    background: var(--color-gradient);
+    padding: 0px;
+    margin: auto;
+    cursor: auto;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+:root {
+    --color-gradient: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(156,82,180,1) 50%, rgba(252,70,107,1) 100%);
+    --background: aliceblue;
+    --background-transparent: rgba(240, 248, 255, 0.5);
+    --darker-background: rgb(221, 228, 235);
+    --text-color: dimgrey;
+    --slightly-transparent: rgba(0, 0, 0, 0.123);
+    --shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.35);
+    --strong-shadow: 4px 0px 10px 0px rgba(0, 0, 0, 0.6);
+
+    --red: rgb(223, 72, 72);
+    --green: #3ee483;
+    --orange: rgb(250, 179, 48);
+    --discord: #5865F2;
+}
