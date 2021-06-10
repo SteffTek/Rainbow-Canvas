@@ -13,6 +13,7 @@ let { matchedData } = require("express-validator/filter");
 let getRoutes = require("./getRoutes");
 let log = require("../utils/logger");
 let conf = require("../utils/configHandler");
+let config = conf.getConfig();
 
 // Modules
 let robots = require("./modules/robots");
@@ -53,8 +54,7 @@ module.exports = function(app){
     });
 
     app.get("/discord/login", (req, res) => {
-        res.redirect("https://discord.com/api/oauth2/authorize?client_id=850019972457562132&redirect_uri=https%3A%2F%2Frainbow.stefftek.de%2Fdiscord%2Fauth&response_type=code&scope=identify")
-        //res.redirect("https://discord.com/api/oauth2/authorize?client_id=850019972457562132&redirect_uri=http%3A%2F%2Flocalhost%2Fdiscord%2Fauth&response_type=code&scope=identify");
+        res.redirect(config.discord_oauth.loginUri);
     });
 
     app.get("/discord/logout", (req, res) => {

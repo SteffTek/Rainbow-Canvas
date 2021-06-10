@@ -6,9 +6,11 @@ An r/Place clone.
 
 [**Rainbow Heatmap**](https://github.com/SteffTek/Rainbow-Heatmap) - Generate a heat map from rainbow data.
 
-Rainbow Top Score (TBU)
+[**Rainbow Score**](https://github.com/SteffTek/Rainbow-Score) - Calculate which users have the most pixels placed.
 
-Rainbow Server (TBU)
+**Rainbow Server** - The heart&logic of Rainbow Canvas. Provides logic and administration. _Still needs cleanup_
+
+All sub-projects have the same requirements as this main project.
 
 ### Dependencies
 | Software | Version |
