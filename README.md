@@ -8,7 +8,7 @@ An r/Place clone.
 
 [**Rainbow Score**](https://github.com/SteffTek/Rainbow-Score) - Calculate which users have the most pixels placed.
 
-**Rainbow Server** - The heart&logic of Rainbow Canvas. Provides logic and administration. _Still needs cleanup_
+[**Rainbow Server**](https://github.com/SteffTek/Rainbow-Server) - The heart&logic of Rainbow Canvas. Provides logic and administration.
 
 All sub-projects have the same requirements as this main project.
 
