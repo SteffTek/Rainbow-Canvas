@@ -107,7 +107,7 @@ app.use((req, res, next) => {
 
 app.use(minify());
 
-//Static Path
+//Static Paths
 app.use(express.static("./src/assets/static"));
 
 require("./routes/router")(app);
